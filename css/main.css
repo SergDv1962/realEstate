@@ -640,6 +640,11 @@ button {
   }
 }
 .footer__copyright {
+  color: var(--color-secondary-grey-dark);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
   margin-top: 77px;
 }
 @media (max-width: 1199.9px) {
