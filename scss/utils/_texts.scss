@@ -1,0 +1,21 @@
+.brand-color {
+   color: var(--color-primary-blue-light);
+}
+.text-uppercase{
+   text-transform: capitalize;
+}
+.title {
+   color: var(--color-primary-black);
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 1.375;
+   @media (max-width: $bp-tablet) {
+      font-size: 28px;
+   }
+   @media (max-width: $bp-mobile) {
+      font-size: 26px;
+   }
+   &_central {
+      text-align: center;
+   }
+}

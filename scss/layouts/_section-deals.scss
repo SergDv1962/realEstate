@@ -1,0 +1,109 @@
+.section-deals {
+  &__container {
+    padding-top: 224px;
+    @media (max-width: $bp-desktop) {
+      padding-top: 96px;
+    }
+  }
+  &__text-block {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+  &__content {
+    margin-bottom: 50px;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+  &__title {
+    margin-bottom: 15px;
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__text {
+    width: 470px;
+    line-height: 1.5;
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__button {
+    width: 200px;
+    height: 65px;
+    border-radius: 5px;
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+    }
+  }
+  &__nav {
+    margin-bottom: 57px;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    @media (max-width: $bp-tv) {
+      justify-content: center;
+    }
+    @media (max-width: $bp-tablet) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  &__item {
+    position: relative;
+    font-size: 19px;
+    line-height: 1.37;
+    transition: color 0.3s ease 0s;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--color-primary-blue-light);
+      transition: width 0.3s ease 0s;
+    }
+    &:hover {
+      color: var(--color-primary-blue-light);
+      &::after {
+        width: 100%;
+        background-color: var(--color-primary-blue-light);
+      }
+    }
+    &_active {
+      color: var(--color-secondary-red);
+      &::after {
+        width: 100%;
+        background: var(--color-secondary-red);
+      }
+    }
+  }
+  &__tabs-block {
+  }
+  &__tabs-selected {
+    display: none;
+    &_active {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      @media (max-width: $bp-tv) {
+        justify-content: center;
+      }
+    }
+  }
+  &__tab {
+  }
+}

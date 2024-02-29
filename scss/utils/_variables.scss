@@ -1,0 +1,27 @@
+:root {
+--color-primary-blue-light: rgb(44, 189, 231);
+--color-primary-blue-bgc: rgb(189, 204, 255); 
+--color-primary-blue-bgc-feature: rgb(241, 255, 255); 
+--color-primary-blue-bgc-footer: rgb(251, 252, 252); 
+--color-primary-white: #ffffff; 
+--color-primary-grey: rgb(51, 51, 51); 
+--color-primary-black: #000000;
+--color-primary-black-opacity: rgba(0, 0, 0, 0.4);
+--color-secondary-grey-dark: rgb(49, 53, 59); 
+--color-secondary-grey-medium: rgb(84, 90, 88); 
+--color-secondary-grey-light: rgb(229, 229, 229);
+--color-secondary-grey-border: rgb(235, 235, 235);
+--color-secondary-grey-info-card: rgb(102, 102, 102);
+--color-secondary-logo-partners: rgb(113, 128, 135);
+--color-secondary-yellow: rgb(255, 153, 0);
+--color-secondary-yellow-stars: rgb(251, 176, 64);
+
+--color-secondary-red: #F85A47;
+--color-secondary-dack-red: #7a2c23;
+}
+
+$bp-small-mobile: 320px;
+$bp-mobile: 479.9px;
+$bp-tablet: 767.9px;
+$bp-desktop: 1199.9px;
+$bp-tv: 1439.9px;

@@ -1,0 +1,52 @@
+.section-how-works {
+   &__container {
+     padding-top: 220px;
+     @media (max-width: $bp-desktop) {
+      padding-top: 96px;
+   }
+      
+   }
+   &__title {
+      margin-bottom: 70px;
+      @media (max-width: $bp-desktop) {
+         margin-bottom: 50px;  
+      }
+   }
+   &__block-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 160px;
+      @media (max-width: $bp-desktop) {
+         gap: 40px;  
+      }
+      @media (max-width: $bp-tablet) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 50px;
+      }
+   }
+   &__between-cards {
+      position: relative;
+      &::after, &::before{
+         content: "";
+         position: absolute;
+         top: 41px;
+         height: 11px;
+         width: 210px;
+         background-image: url("/images/cards/line.svg");
+         @media (max-width: $bp-desktop) {
+            display: none;
+         }
+      }
+      &::before{
+         left: -285px;
+      }
+      &::after{
+         right: -290px;
+         transform: rotate(180deg);
+      }
+      
+   }
+}
+

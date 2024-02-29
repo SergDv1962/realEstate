@@ -1,0 +1,88 @@
+.footer {
+  &__container {
+    padding: 162px 280px 36px;
+    background-color: var(--color-primary-blue-bgc-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $bp-tv) {
+      padding: 96px 100px 36px;
+    }
+    @media (max-width: $bp-desktop) {
+      padding: 96px 32px 32px;
+    }
+  }
+  &__title {
+    margin-bottom: 11px;
+  }
+  &__text {
+    color: var(--color-secondary-grey-dark);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.442;
+    margin-bottom: 34px;
+  }
+  &__form {
+    max-width: 686px;
+    width: 100%;
+    box-shadow: 0px 3.02px 3.15px 0px rgba(0, 0, 0, 0.01),
+      0px 13.28px 6.52px 0px rgba(0, 0, 0, 0.02),
+      0px 32.6px 13px 0px rgba(0, 0, 0, 0.02),
+      0px 62.79px 25.48px 0px rgba(0, 0, 0, 0.02),
+      0px 105.65px 46.85px 0px rgba(0, 0, 0, 0.03),
+      0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+    background: var(--color-primary-white);
+    margin-bottom: 160px;
+    @media (max-width: $bp-desktop) {
+      margin-bottom: 56px;
+    }
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 36px;
+    }
+  }
+  &__menu {
+    padding-top: 60px;
+    border-top: 1px solid var(--color-secondary-grey-medium);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    @media (max-width: $bp-desktop) {
+      padding-top: 32px;
+    }
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+  }
+  &__logo {
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+  &__social {
+    display: none;
+    @media (max-width: $bp-tv) {
+      margin-top: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    @media (max-width: $bp-desktop) {
+      margin-top: 32px;
+    }
+    @media (max-width: $bp-tablet) {
+      margin-top: 24px;
+    }
+  }
+  &__copyright{
+    margin-top: 77px;
+    @media (max-width: $bp-desktop) {
+      margin-top: 36px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+   &__container {
+      padding-top: 34px;
+      position: relative;
+   }
+   &__menu{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      z-index: 100;
+   }
+   &__nav{
+     @media (max-width: $bp-tablet) {
+         display: none;
+      } 
+   }
+   &__burger{
+      display: none;
+      fill: var(--color-secondary-grey-dark);
+      cursor: pointer;
+      &:hover{
+         fill: var(--color-primary-blue-light);
+      }
+      @media (max-width: $bp-tablet) {
+         display: block;
+      }
+   } 
+}

@@ -1,0 +1,17 @@
+.container{
+   width: 1440px;
+   margin: 0 auto;
+   padding: 0 135px;
+   background-color: var(--color-primary-white);
+   @media (max-width: $bp-tv) {
+      max-width: 1170px;
+      padding: 0 20px; 
+   }
+   @media (max-width: $bp-desktop) {
+      max-width: 760px;
+   }
+   @media (max-width: $bp-tablet) {
+      max-width: 440px;
+   }
+
+}

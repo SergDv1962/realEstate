@@ -1,0 +1,10 @@
+.social{
+   &__icon{
+      fill:var(--color-primary-black);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      &:hover{
+      fill: var(--color-primary-blue-light);
+      }
+   }
+}

@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 26px 30px;
+  @media (max-width: $bp-tablet) {
+   flex-direction: column;
+   align-items: center;
+   gap: 32px;
+   padding: 12px;
+  }
+  &__email {
+    flex: 1 1 auto;
+    margin-left: 15px;
+    @media (max-width: $bp-tablet) {
+      margin-left: 0;
+    }
+  }
+  &__lable {
+    margin-bottom: 11px;
+    display: block;
+    color: var(--color-secondary-grey-dark);
+    opacity: 0.5;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.442;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    color: var(--color-secondary-grey-dark);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.442;
+    border: none;
+  }
+  &__btn-submit {
+    padding: 23px 40px;
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
