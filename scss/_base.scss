@@ -5,10 +5,12 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
+  height: 100%;
   font-family: "Manrope", sans-serif;
   color: var(--color-primary-black);
   background-color: var(--color-secondary-grey-light);

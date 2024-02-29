@@ -1,0 +1,17 @@
+.about {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__main.container {
+    flex: 1 1 auto;
+    background-color: var(--color-primary-blue-bgc);
+  }
+  &__container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  &__title {
+  }
+}
